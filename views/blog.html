@@ -1,0 +1,102 @@
+<html>
+    <head>
+        <title>Add Project</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+        <link href="/public/css/style.css" rel="stylesheet">
+    </head>
+    <body>
+                <!--navbar-->
+                <nav class="navbar navbar-expand-lg">
+                  <div class="container">
+                    <a class="navbar-brand" href="#">
+                      <img src="/public/image/logo.png" alt="logo">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                          <a class="nav-link me-3 ms-3 active fw-semibold" aria-current="page" href="/">Home</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link active fw-semibold" href="/blog">Add Project</a>
+                        </li>
+                      </ul>
+                      <div class="d-flex justify-content-end">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                          <li class="nav-item ">
+                              <a class="nav-link me-3 ms-3 active fw-semibold" href="/form-register">Register</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link me-3 ms-3 active fw-semibold" href="/form-login">Login</a>
+                          </li>
+                      </ul>
+                        <button class="btn text-light  bg-dark " type="submit">
+                          <a class="nav-link active" aria-current="page" href="/contact">Contact Me</a>
+                        </button>
+                    </div>
+                  </div>
+                  </div>
+                </nav>
+        <h1 class="getin">
+            ADD MY PROJECT
+        </h1>
+        <!--form-->
+
+        <h1>
+          {{.DataSession.IsLogin}}
+        </h1>
+        <form action="/add-blog" method="post" class="form">
+            <div class="project-name">
+                <label for="project-name">Project Name</label>
+                <input name="title" type="text" id="projectName">
+            </div>
+            
+            <div class="date">
+                <div class="start-date">
+                    <label for="start-date">Start Date</label>
+                    <input name="startDate" type="date" id="startDate">
+                </div>
+                <div class="end-date">
+                    <label for="end-date">End Date</label>
+                    <input name="endDate" type="date" id="endDate">
+                </div>
+            </div>
+
+            <div>
+                <label for="description">Description</label>
+                <textarea name="content" id="description"></textarea>
+            </div>
+
+            <div>
+                <label for="">Technologies</label>
+                <div class="container-tech">
+                        <div>
+                            <input name="nodeJs" type="checkbox" id="nodeJs">
+                            <label for="nodeJs">Node Js</label>
+                        </div>
+                        <div>
+                            <input name="nextJs" type="checkbox" id="nextJs">
+                            <label for="nextJs">Next Js</label>
+                        </div>
+                        <div>
+                            <input name="reactJs" type="checkbox" id="reactJs">
+                            <label for="reactJs">React Js</label>
+                        </div>
+                        <div>
+                            <input name="typeScript" type="checkbox" id="typeScript">
+                            <label for="typeScript">Type Script</label>
+                        </div>
+                </div>
+            </div>
+                <div>
+                    <label for="">Upload image</label>
+                    <input name="name" type="file" name="" id="upimg">
+                </div>
+                <button type="submit">Submit</button>
+        </form>
+    </div>
+    </body>
+    <!-- <script src="/public/js/blog.js"></script> -->
+</html>

@@ -1,0 +1,241 @@
+body{
+    margin: 0;
+    background-color: #e3e7eb;
+}
+
+/* navbar styling */
+.navbar{
+    background-color: #f4f3f3;
+}
+
+.nav-left ul{
+    display: flex;
+    list-style-type: none;
+}
+.nav-left ul li{
+    margin-right: 30px;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.nav-left a{
+    text-decoration: none;
+    color: black;
+}
+
+.nav-right a{
+    text-decoration: none;
+    font-size: 20px;
+    background-color: black;
+    padding: 8px 20px;
+    border-radius: 5px;
+    color: white;
+}
+
+/* nav img{
+    padding-right: 50px;
+    align-items: center;
+    justify-content: center;
+    width: 10%;
+} */
+
+/*  card styling       */
+.card{
+    border: 0.5px solid whitesmoke; padding: 10px; margin: 100px auto; width: 1200px; border-radius: 15px; box-shadow:0 0 30px #3d3d3d;
+}
+.card{
+    display: flex;
+    justify-content: space-between;
+    background-color: #fefefe;
+}
+
+.content{
+    padding: 100px;
+}
+
+.contact{
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 5px 20px;
+    border-radius: 20px;
+}
+.CV{
+    text-decoration: none;
+    color: black;
+    padding-left: 20px;
+}
+.social{
+    padding-top: 30px;
+}
+
+.social a {
+    padding-right: 20px;
+}
+
+.foto{
+    border-radius: 10px;
+    box-shadow: 0 0 20px #a7aaad;
+}
+.nama-bawah{
+    text-align: center;
+}
+
+/* contact me styling */
+form {
+    width: 350px;
+    margin: 50px auto;
+}
+
+form div{
+    margin-top: 10px;
+}
+
+label{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+input, select, textarea{
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #eaeaea;
+    padding: 10px;
+    margin-top: 5px;
+    box-shadow: 0 0 5px #a7aaad;
+}
+
+textarea{
+    resize: none;
+    height: 100px;
+}
+
+button{
+    background-color: black;
+    padding: 10px 30px;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    margin-top: 20px;
+    float: right;
+    font-weight: bold;
+}
+.getin{
+    text-align: center;
+    padding-top: 50px;
+}
+
+/*detail blog*/
+.head h1{
+    text-align: center;
+}
+
+.article{
+    display: block;
+    text-align: justify;
+    padding-left: 0;
+    margin: auto;
+    text-align: center;
+    margin: 100px 0px 0px 100px;
+}
+
+.article-content{
+    display: block;
+}
+
+
+.date {
+    display: flex;
+}
+.end-date{
+    padding-left: 10px;
+}
+
+.container-tech {
+    display: grid;
+    grid-template-columns: 175px 175px;
+    list-style-type: none;
+    padding: 10px;
+}
+
+.container-tech input{
+    width: auto;
+}
+
+.container-article-myproject{
+    background-color: #f8f8f8;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    margin-top: 100px;
+}
+
+.article-myproject{
+    padding: 0px 60px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-top: 20px;
+}
+
+.name-myproject{
+    display: flex  ;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+    
+}
+.card-myproject{
+    width: 400px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #a7aaad;
+    padding: 10px 20px;
+    margin: 50 10px;
+}
+.card-myproject img{
+    width: 100%;
+    border-radius: 10px;
+    height: 266.14px;
+    
+}
+
+.foto-card{
+    width: 100%;
+    border-radius: 10px;
+    height: 266.14px;
+    
+}
+
+.logo-myarticle span svg{
+    height: 30px;
+    width: 30px;
+    padding: 10px 10px 0px 5px;
+}
+
+.button-edit, .button-delete{
+    background-color: black;
+    padding: 10px 30px;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    margin: 20px 5px;
+    font-weight: bold;
+}
+.button-card-myarticle{
+    display: grid;
+    grid-template-columns: auto auto;
+    text-decoration: none;
+    text-align: center;
+}
+
+
+
+
+.row h3 a{
+    text-decoration: none;
+    color: black;
+}
+
+.card-myproject h3 a{
+    text-decoration: none;
+    color: black;
+}
